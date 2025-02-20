@@ -1,6 +1,100 @@
-<html>
-  <header>Timothy's Personal Portfolio</header>
-  <body>
-    <p>This is the landing page for my personal portfolio that is under construction.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timothy's Project Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, black, gray);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .content-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            font-size: 2em;
+            padding: 20px;
+            text-align: center;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .grid-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <header>Timothy's Project Portfolio</header>
+        <p class="intro">Hi!</p>
+        <p class="intro">I’m a Senior Unity Developer with a passion for crafting interactive software tools for training environments. My journey began right after high school as a self-taught 3D modeler and animator, but I quickly discovered my true calling in game software development—a field that constantly challenges and excites me.</p>
+        <p class="intro">I thrive in rapid prototyping and new feature development, yet I also value the patience and commitment required for long-term software maintenance. Throughout my career, I’ve had the privilege of contributing to multiple virtual reality training simulators, PC-based interactive tools, a mobile game prototype, and more.</p>
+        <p class="intro">I'm always open to new opportunities and enjoy connecting with like-minded professionals. Feel free to reach out on <a href="https://www.linkedin.com/in/tim-snyder-242aba39/">LinkedIn</a> to connect. I’d love to hear from you!</p>
+        <div class="grid-container">
+            <a href="project1.html" class="grid-item">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Project 1</p>
+            </a>
+            <a href="project2.html" class="grid-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Project 2</p>
+            </a>
+            <a href="project3.html" class="grid-item">
+                <img src="project3.jpg" alt="Project 3">
+                <p>Project 3</p>
+            </a>
+            <a href="project4.html" class="grid-item">
+                <img src="project4.jpg" alt="Project 4">
+                <p>Project 4</p>
+            </a>
+            <a href="project5.html" class="grid-item">
+                <img src="project5.jpg" alt="Project 5">
+                <p>Project 5</p>
+            </a>
+            <a href="project6.html" class="grid-item">
+                <img src="project6.jpg" alt="Project 6">
+                <p>Project 6</p>
+            </a>
+        </div>
+    </div>
+</body>
 </html>
