@@ -20,14 +20,19 @@
         .content-container {
             width: 90%;
             max-width: 1100px;
-            height: 90vh;
-            overflow-y: auto;
-            background: rgba(0, 0, 0, 0.85);
+            max-height: 90vh;
+            background: rgba(20, 20, 20, 0.95);
             padding: 30px;
             box-sizing: border-box;
             border-radius: 10px;
-            backdrop-filter: blur(10px);
-            color: #00ffee;
+            backdrop-filter: blur(15px);
+            color: #ffffff;
+            overflow-y: auto;
+            -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+            scrollbar-width: none;  /* Hide scrollbar for Firefox */
+        }
+        .content-container::-webkit-scrollbar {
+            display: none;  /* Hide scrollbar for Chrome, Safari, and Opera */
         }
         header {
             font-size: 2.5em;
@@ -36,12 +41,14 @@
             font-weight: bold;
             text-transform: uppercase;
             border-bottom: 2px solid #00ffcc;
+            color: #00ffcc;
         }
         .intro {
             text-align: center;
             font-size: 1.3em;
             margin-bottom: 25px;
             line-height: 1.6;
+            color: #d4d4d4;
         }
         .grid-container {
             display: grid;
@@ -52,16 +59,17 @@
             margin: auto;
         }
         .grid-item {
-            background: rgba(0, 255, 204, 0.3);
-            padding: 10px;
+            background: rgba(0, 255, 204, 0.2);
+            padding: 15px;
             border-radius: 10px;
             transition: transform 0.3s, background 0.3s;
             text-align: center;
             border: 1px solid #00ffee;
+            color: #ffffff;
         }
         .grid-item:hover {
             transform: scale(1.05);
-            background: rgba(0, 255, 204, 0.6);
+            background: rgba(0, 255, 204, 0.5);
         }
         .grid-item img {
             width: 100%;
@@ -71,7 +79,7 @@
         }
         a {
             text-decoration: none;
-            color: #00ffee;
+            color: #00ffcc;
         }
         a:hover {
             text-decoration: underline;
