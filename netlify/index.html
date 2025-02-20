@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: url('/images/TechBackgroundUpdated.jpg') no-repeat center center fixed;
+            background: url('/images/TechBackground.webp') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             color: #00ffcc;
@@ -26,7 +26,7 @@
         }
         .content-container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 900px;
             margin: auto;
             padding: 30px;
             box-sizing: border-box;
@@ -42,6 +42,10 @@
             border-bottom: 2px solid #00ffcc;
             color: #00ffcc;
             text-shadow: 2px 2px 10px rgba(0, 255, 204, 0.8);
+            background: rgba(0, 0, 0, 0.7);
+            padding-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .intro {
             text-align: center;
@@ -53,9 +57,6 @@
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            max-width: 900px;
-            margin: auto;
-            margin-bottom: 20px;
         }
         .grid-container {
             display: grid;
@@ -93,6 +94,9 @@
         a:hover {
             text-decoration: underline;
         }
+        a[target="_blank"] {
+            cursor: pointer;
+        }
         footer {
             text-align: center;
             margin-top: 30px;
@@ -108,7 +112,7 @@
             <p class="intro">Hi!</p>
             <p class="intro">I’m a Senior Unity Developer with a passion for crafting interactive software tools for training environments. My journey began right after high school as a self-taught 3D modeler and animator, but I quickly discovered my true calling in game software development—a field that constantly challenges and excites me.</p>
             <p class="intro">I thrive in rapid prototyping and new feature development, yet I also value the patience and commitment required for long-term software maintenance. Throughout my career, I’ve had the privilege of contributing to multiple virtual reality training simulators, PC-based interactive tools, a mobile game prototype, and more.</p>
-            <p class="intro">I'm always open to new opportunities and enjoy connecting with like-minded professionals. Feel free to reach out on <a href="https://www.linkedin.com/in/tim-snyder-242aba39/">LinkedIn</a> to connect. I’d love to hear from you!</p>
+            <p class="intro">I'm always open to new opportunities and enjoy connecting with like-minded professionals. Feel free to reach out on <a href="https://www.linkedin.com/in/tim-snyder-242aba39/" target="_blank">LinkedIn</a> to connect. I’d love to hear from you!</p>
             <div class="grid-container">
                 <a href="project1.html" class="grid-item">
                     <img src="/images/BHSimulatorSplash.png" alt="UGSR Battery Hauler Simulator">
