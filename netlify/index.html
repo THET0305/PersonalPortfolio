@@ -143,25 +143,36 @@
     
     <script>
         const projects = [
-            { title: "Komatsu UGSR Battery Hauler Operator Training Simulator", image: "/images/BHSimulatorSplash.png", details: "Details about the battery hauler simulator." },
-            { title: "Komatsu UGSR Continuous Miner Operator Training Simulator", image: "/images/CMSimulatorSplash.png", details: "Details about the continuous miner simulator." },
-            { title: "Project 3", image: "project3.jpg", details: "Details about Project 3." }
+            { title: "Komatsu UGSR Battery Hauler Operator Training Simulator", image: "/images/BHSimulatorSplash.png", file: "projects/project1.html" },
+            { title: "Komatsu UGSR Continuous Miner Operator Training Simulator", image: "/images/CMSimulatorSplash.png", file: "projects/project2.html" },
+            { title: "Project 3", image: "project3.jpg", file: "projects/project3.html" }
         ];
         
         const gridContainer = document.getElementById("projectGrid");
-        projects.forEach((project, index) => {
+        
+        projects.forEach((project) => {
             const projectItem = document.createElement("div");
             projectItem.className = "grid-item";
             projectItem.innerHTML = `<img src="${project.image}" alt="${project.title}"><p>${project.title}</p>`;
-            projectItem.onclick = () => openOverlay(project.title, project.details);
+            projectItem.onclick = () => openOverlay(project.title, project.file);
             gridContainer.appendChild(projectItem);
         });
         
-        function openOverlay(title, details) {
+        function openOverlay(title, file) {
             document.getElementById('projectTitle').innerText = title;
-            document.getElementById('projectDetails').innerText = details;
-            document.getElementById('projectOverlay').style.display = 'flex';
+            
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('projectDetails').innerHTML = data;
+                    document.getElementById('projectOverlay').style.display = 'flex';
+                })
+                .catch(error => {
+                    document.getElementById('projectDetails').innerText = "Error loading project details.";
+                    console.error("Error fetching project file:", error);
+                });
         }
+        
         function closeOverlay() {
             document.getElementById('projectOverlay').style.display = 'none';
         }
