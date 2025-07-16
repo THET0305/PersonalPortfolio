@@ -6,7 +6,7 @@ import HeroSection from './pages/HeroSection';
 import ProjectsPage from './pages/ProjectsPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ResumePage from './pages/ResumePage';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 
 export default function App() {
   return (
