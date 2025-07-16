@@ -1,0 +1,21 @@
+// data/projects.json
+[
+  {
+    "title": "Image Project",
+    "description": "This is a project with an image.",
+    "type": "image",
+    "media": "/images/project1.jpg"
+  },
+  {
+    "title": "Video Project",
+    "description": "This project has an embedded video.",
+    "type": "video",
+    "media": "https://www.youtube.com/embed/VIDEO_ID"
+  },
+  {
+    "title": "WebGL Project",
+    "description": "This project links to a WebGL app.",
+    "type": "webgl",
+    "media": "https://your-webgl-app.com"
+  }
+]
