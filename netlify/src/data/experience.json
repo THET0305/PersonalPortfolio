@@ -1,0 +1,15 @@
+// data/experience.json
+[
+  {
+    "role": "Frontend Developer",
+    "company": "Tech Corp",
+    "duration": "2022 - Present",
+    "description": "Worked on modern React applications."
+  },
+  {
+    "role": "Web Developer",
+    "company": "Startup Inc.",
+    "duration": "2020 - 2022",
+    "description": "Built responsive websites using Bootstrap."
+  }
+]
